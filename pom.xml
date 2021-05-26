@@ -25,6 +25,11 @@
       <artifactId>spring-core</artifactId>
       <version>${spring.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
     <!-- SpringMVC 依赖 -->
     <dependency>
       <groupId>org.springframework</groupId>

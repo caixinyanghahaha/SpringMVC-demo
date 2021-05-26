@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <head>
-    <title>01-Demo</title>
+    <title>${demoId}-Demo</title>
 </head>
 <body>
     <div>

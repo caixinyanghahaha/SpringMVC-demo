@@ -13,7 +13,8 @@ public class FirstController implements Controller {
 
         // 创建 ModelAndView 对象
         ModelAndView mav = new ModelAndView();
-        // 添加一个 Model 数据
+        // 添加 Model 数据
+        mav.addObject("demoId", "01");
         mav.addObject("msg", "SpringMVC 入门");
         // 设置视图页面
         /* 设置视图解析器前后缀之前 */

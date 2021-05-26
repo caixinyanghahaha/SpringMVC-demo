@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:content="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 配置处理器 Handle，映射 [/first] 请求 -->
     <bean name="/first" class="com.icarus.controller.FirstController"/>
 
+    <!-- 指定需要扫描的包，如果使用了注解(@Controller)，需要指定扫描使用了注解的包 -->
+    <content:component-scan base-package="com.icarus.controller"/>
 
     <!-- 处理器映射器，将配置的处理器的 name 值作为 url 进行查找 -->
     <!-- <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/> -->
